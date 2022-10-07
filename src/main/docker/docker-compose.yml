@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  mysqldb:
+    image: mysql:8
+    container_name: mysqldb
+    restart: always
+    ports:
+      - 3306:3306
+    volumes:
+      - ./data:/data/db
+      # ~/your/volume/path:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+    expose:
+      - 3306
