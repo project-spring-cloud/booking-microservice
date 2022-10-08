@@ -62,7 +62,11 @@
             <version>3.1.4</version>
         </dependency>
 
-
+        <!--Refresh configuration from service-configuration repository-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
